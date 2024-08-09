@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no">
-    <title> Free Computer Service Website Template | Smarteyeapps.com</title>
+    <title> Sathyam Computers</title>
 
     <link rel="shortcut icon" href="assets/images/fav.jpg">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -13,90 +13,31 @@
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/plugins/slider/css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
 
     <!--####################### Header Starts Here ###################-->
-    <header class="container-fluid">
-        <div class="header-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="cont-det">
-                            <li>+87 676 654 44</li>
-                            <li>sales@smarteyeapps.com</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 d-none d-lg-block">
-                        <ul class="social-link">
-                            <li><a><i class="fab fa-github"></i></a></li>
-                            <li><a><i class="fab fa-linkedin-in"></i></a></li>
-                            <li> <a><i class="fab fa-pinterest-p"></i></a></li>
-                            <li><a><i class="fab fa-twitter"></i></a></li>
-                            <li> <a><i class="fab fa-facebook-f"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 logo">
-                        <a href="index.html">
-                                <img src="assets/images/logo.png" alt="">
-                        </a>
-                        
-                        <a data-toggle="collapse" data-target="#nav-head" href="#nav-head" ><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
-                    </div>
-                    <div class="col-md-9 ">
-                        <div class="contact d-none d-md-block">
-                            <ul>
-                                <li>
-                                    <div class="cont-ro">
-                                        <div class="ico">
-                                            <i class="fas fa-phone-volume"></i>
-                                        </div>
-                                        <div class="det">
-                                            <p>Contact Us</p>
-                                            <b>+976 55 44 33</b>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="cont-ro">
-                                        <div class="ico">
-                                            <i class="far fa-clock"></i>
-                                        </div>
-                                        <div class="det">
-                                            <p>Contact Us</p>
-                                            <b>+976 55 44 33</b>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="cont-ro">
-                                       <button class="btn btn-danger">Get A Free Quote</button>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="nav-head" class="nav-part d-none d-md-block">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about_us.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="">Pages</a></li>
-                                <li><a href="contact_us.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div id="navbar-placeholder"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch('./nav&footer/nav.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading the navbar:', error));
+  
+        fetch('./nav&footer/footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading the footer:', error));
+      });
+    </script>
 
      <!--  ************************* Page Title Starts Here ************************** -->
      <div class="page-nav no-margin row">
@@ -104,7 +45,7 @@
                 <div class="row">
                     <h2>Our Services</h2>
                     <ul>
-                        <li> <a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li> <a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                         <li><i class="fas fa-angle-double-right"></i> Services</li>
                     </ul>
                 </div>
@@ -115,179 +56,95 @@
      <!--####################### Services Starts Here ###################-->
 
      <div class="service-container container-fluid">
-            <div class="container">
-               
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="serv-cover">
-                            <div class="icon">
-                                <i class="fas fa-desktop"></i>
-                            </div>
-                            <div class="detail">
-                                <h6>Desktop Service</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum dolor sit amet, consectetur ut erat nec leo lobortis blandit.</p>
-                            </div>
+        <div class="container">
+          <div class="row inner-title">
+            <h2>Our Services</h2>
+            <p>We offer expert solutions for all your computer and desktop needs. From repairs to upgrades, we've got you covered.</p>
+        </div>
+        
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="serv-cover">
+                        <div class="icon">
+                            <i class="fas fa-desktop"></i>
                         </div>
+                        <div class="detail">
+                          <h6>Desktop Service</h6>
+                          <p>Our comprehensive desktop service includes diagnostics, repairs, upgrades, and maintenance. Whether you're dealing with hardware issues, software problems, or need a system upgrade, our skilled technicians are here to help. We ensure your desktop runs smoothly and efficiently.</p>
+                      </div>
+                      
                     </div>
-                    <div class="col-md-4">
-                        <div class="serv-cover">
-                            <div class="icon">
-                                <i class="fas fa-laptop"></i>
-                            </div>
-                            <div class="detail">
-                                <h6>Laptop Service</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum dolor sit amet, consectetur ut erat nec leo lobortis blandit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serv-cover">
+                        <div class="icon">
+                            <i class="fas fa-laptop"></i>
                         </div>
+                        <div class="detail">
+                          <h6>Laptop Service</h6>
+                          <p>Our expert laptop services cover a wide range of issues including screen repairs, battery replacement, keyboard repairs, and system optimization. We also handle software installations and virus removals. Our goal is to ensure your laptop functions at its best, providing you with reliable and efficient performance.</p>
+                      </div>
+                      
                     </div>
-                    <div class="col-md-4">
-                        <div class="serv-cover">
-                            <div class="icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="detail">
-                                <h6>Data Recovery</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum dolor sit amet, consectetur ut erat nec leo lobortis blandit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serv-cover">
+                        <div class="icon">
+                            <i class="fas fa-print"></i>
                         </div>
+                        <div class="detail">
+                          <h6>Printer Service</h6>
+                          <p>Our printer services include troubleshooting, repairs, and maintenance for all types of printers. Whether you need help with paper jams, print quality issues, or hardware malfunctions, our skilled technicians can get your printer back in optimal working condition. We also offer setup and installation services for new printers.</p>
+                      </div>
+                      
                     </div>
-                    <div class="col-md-4">
-                        <div class="serv-cover">
-                            <div class="icon">
-                                <i class="fab fa-microsoft"></i>
-                            </div>
-                            <div class="detail">
-                                <h6>Software Installatios</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum dolor sit amet, consectetur ut erat nec leo lobortis blandit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serv-cover">
+                        <div class="icon">
+                            <i class="fa fa-camera"></i>
                         </div>
+                        <div class="detail">
+                          <h6>CCTV Service</h6>
+                          <p>We provide comprehensive CCTV services including installation, maintenance, and repairs. Our team ensures your surveillance systems are properly set up and functioning to provide optimal security. Whether you need a new system installed or an existing one serviced, we offer solutions tailored to your needs.</p>
+                      </div>
+                      
                     </div>
-                    <div class="col-md-4">
-                        <div class="serv-cover">
-                            <div class="icon">
-                                <i class="fab fa-gg-circle"></i>
-                            </div>
-                            <div class="detail">
-                                <h6>Motherboard Service</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum dolor sit amet, consectetur ut erat nec leo lobortis blandit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serv-cover">
+                        <div class="icon">
+                            <i class="fa fa-network-wired"></i>
                         </div>
+                        <div class="detail">
+                          <h6>Networking</h6>
+                          <p>Our networking services include installation, configuration, and troubleshooting of network systems. We handle both wired and wireless networks, ensuring secure and reliable connectivity for your home or business. Whether you need network setup, optimization, or issue resolution, our experts are here to ensure your network operates smoothly.</p>
+                      </div>
+                      
                     </div>
-                    <div class="col-md-4">
-                        <div class="serv-cover">
-                            <div class="icon">
-                                <i class="fas fa-project-diagram"></i>
-                            </div>
-                            <div class="detail">
-                                <h6>Computer Networking</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum dolor sit amet, consectetur ut erat nec leo lobortis blandit.</p>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serv-cover">
+                        <div class="icon">
+                            <i class="fas fa-project-diagram"></i>
                         </div>
+                        <div class="detail">
+                          <h6>Data Recovery</h6>
+                          <p>Our data recovery services are designed to help you retrieve lost or corrupted data from hard drives, SSDs, and other storage devices. Whether your data loss is due to hardware failure, accidental deletion, or malware, our experts use advanced techniques to recover your valuable information. </p>
+                      </div>
+                      
                     </div>
                 </div>
             </div>
         </div>
+    </div>
         
 
     
     <!--####################### footer Starts Here ###################-->
-    <footer>
-        <div class="inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 foot-about">
-                        <h4>About US</h4>
+    <div id="footer-placeholder"></div>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit libero pellentesque libero interdum, id mattis felis dictum. Praesent eget lacus tempor justo efficitur malesuada. Cras ut suscipit nisi.</p>
-
-                        <ul>
-                            <li>23 Rose Stren Melbourn</li>
-                            <li>sales@smarteyeapps.com</li>
-                            <li>+91 876 766 554</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-3 foot-post">
-                        <h4>Latest Posts</h4>
-
-                        <div class="post-row">
-                            <div class="image">
-                                <img src="assets/images/blog/blog_01.jpg" alt="">
-                            </div>
-                            <div class="detail">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit </p>
-                            </div>
-                        </div>
-
-                        <div class="post-row">
-                            <div class="image">
-                                <img src="assets/images/blog/blog_02.jpg" alt="">
-                            </div>
-                            <div class="detail">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit </p>
-                            </div>
-                        </div>
-
-                        <div class="post-row">
-                            <div class="image">
-                                <img src="assets/images/blog/blog_03.jpg" alt="">
-                            </div>
-                            <div class="detail">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 foot-services">
-                        <h4>Our Services</h4>
-
-                        <ul>
-                            <li><a href="">Target Statergy</a></li>
-                            <li><a href="">Web Analytics</a></li>
-                            <li><a href="">Page Monitering</a></li>
-                            <li><a href="">Page Optimization</a></li>
-                            <li><a href="">Target Statergy</a></li>
-                            <li><a href="">Email Marketing</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-3 foot-news">
-                        <h4>News Letter</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, vehicula eget eros. </p>
-
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <span class="input-group-text" id="basic-addon2"><i class="fas fa-long-arrow-alt-right"></i></span>
-                            </div>
-                        </div>
-
-                        <ul>
-                            <li><i class="fab fa-facebook-square"></i></li>
-                            <li><i class="fab fa-twitter-square"></i></li>
-                            <li><i class="fab fa-linkedin"></i></li>
-                            <li><i class="fab fa-tumblr-square"></i></li>
-                            <li><i class="fab fa-github-square"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="copy">
-        <div class="container">
-            <a href="https://www.smarteyeapps.com/">2015 &copy; All Rights Reserved | Designed and Developed by Smarteyeapps.com</a>
-
-            <span>
-                <a href=""><i class="fab fa-github"></i></a>
-                <a href=""><i class="fab fa-google-plus-g"></i></a>
-                <a href="https://in.pinterest.com/prabnr/pins/"><i class="fab fa-pinterest-p"></i></a>
-                <a href="https://twitter.com/prabinraja89"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/freewebtemplatesbysmarteye"><i class="fab fa-facebook-f"></i></a>
-            </span>
-        </div>
-
-    </div>
+   
 
 </body>
 <script src="assets/js/jquery-3.2.1.min.js"></script>
